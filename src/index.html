@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title"></title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-orange-100">
+    <header>
+        <nav class="px-4 md:px-8 h-20 w-screen flex flex-row justify-between mt-8 items-center font-serif">
+            <ul class="flex flex-row h-full justify-center items-center min-w-[35%]">
+                <li>
+                    <a href="#projects_section" data-i18n="nav_link_projects">Link</a>
+                </li>
+                <li class="mx-3 w-[1px] bg-slate-700 h-6"></li>
+                <li>
+                    <a href="#education_section" data-i18n="nav_link_education"></a>
+                </li>
+                <li class="mx-3 w-[1px] bg-slate-700 h-6"></li>
+                <li>
+                    <a href="#experience_section" data-i18n="nav_link_experience"></a>
+                </li>
+            </ul>
+            <h1 class="tracking-tight font-thin text-2xl md:text-4xl min-w-[30%] text-center" data-i18n="title"></h1>
+            <ul class="w-max h-full flex flex-row justify-center items-center min-w-[35%]">
+                <li><a href="index.html" onclick="changeLanguage('ur')" data-i18n="nav_link_ur"></a></li>
+                <li class="mx-3 w-[1px] bg-slate-700 h-6"></li>
+                <li><a href="index.html" onclick="changeLanguage('en')" data-i18n="nav_link_en"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="min-h-screen flex flex-col mt-20 static">
+
+        <div class="w-screen min-h-screen absolute top-0 -z-10">
+            <img src="../static/images/layered-steps-haikei.svg" alt="hero background - layered steps"
+                class="object-cover w-full min-h-full scale-y-[150%]">
+        </div>
+
+        <div class="py-20 w-full flex flex-col justify-center items-center">
+            <h2 data-i18n="welcome_message" class="text-3xl md:text-5xl heading"></h2>
+            <p data-i18n="about_me" class="text-2xl mt-2 subheading"></p>
+        </div>
+
+        <div class="flex flex-row">
+
+            <div class="w-[10%]"></div>
+
+            <div class="w-[60%] min-h-full">
+                <div class="w-full flex flex-col gap-6 mb-20">
+                    <video width="100%" height="100%" controls class="rounded-md">
+                        <source
+                            src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+                            type="video/mp4">
+                    </video>
+                    <p class="text text-sm" data-i18n="placeholder_text"></p>
+                </div>
+
+
+                <h2 id="projects_section" data-i18n="projects_heading"
+                    class="text-3xl md:text-5xl mt-40 pb-8 w-full text-center heading">
+                </h2>
+                <div id="projects" class="content w-full flex flex-col">
+                    <project-card heading="project_portfolio_heading" text="project_portfolio_text"
+                        link="https://ehabsohail.vercel.app" image="../static/images/portfolio.webp"
+                        technologies="sveltekit,tailwidcss"></project-card>
+
+                    <project-card heading="project_sohaib_wahab_llc_heading" text="project_sohaib_wahab_llc_text"
+                        link="https://www.sohaibwahabllc.com" image="../static/images/sohaibwahabllc.webp"
+                        technologies="sveltekit,tailwidcss"></project-card>
+
+                    <project-card heading="project_zeevista_heading" text="project_zeevista_text"
+                        link="https://www.sohaibwahabllc.com" image="../static/images/zeevista.webp"
+                        technologies="react,typescript,tailwidcss"></project-card>
+
+                    <project-card heading="project_zavian_consultancy_heading" text="project_zavian_consultancy_text"
+                        link="https://zavianconsultancy.netlify.app" image="../static/images/zavian.webp"
+                        technologies="react,node.js,typescript,tailwidcss"></project-card>
+
+                    <project-card heading="project_cisgroup_heading" text="project_cisgroup_text"
+                        link="https://cisgroup.netlify.app/" image="../static/images/cisgroup.webp"
+                        technologies="react,typescript,tailwidcss"></project-card>
+
+                    <project-card heading="project_algorithm_visualizer_heading"
+                        text="project_algorithm_visualizer_text" link="https://algo-visualizer-cdab4.web.app/#/"
+                        image="../static/images/algo-visualizer.webp"
+                        source-code="https://github.com/Ehab-24/algo-visualizer"
+                        technologies="flutter,firebase"></project-card>
+
+                    <project-card heading="project_scribe_heading" text="project_scribe_text"
+                        image="../static/images/scribe.webp" source-code="https://github.com/Ehab-24/scribe"
+                        technologies="flutter,sqflite,oxford dictionaries api"></project-card>
+                </div>
+
+
+                <h2 id="education_section" data-i18n="education_heading"
+                    class="text-3xl md:text-5xl mt-40 pb-8 w-full text-center heading">
+                </h2>
+                <div class="w-full flex flex-col content">
+                    <education-card program-name="education_cs_degree" institution-name="education_cs_institution"
+                        text="placeholder_text" date-range="education_cs_date_range"></education-card>
+                    <education-card program-name="education_intermediate_degree"
+                        institution-name="education_intermediate_institution" text="placeholder_text"
+                        date-range="education_intermediate_date_range"></education-card>
+                </div>
+
+                <h2 id="experience_section" data-i18n="experience_heading"
+                    class="text-3xl md:text-5xl mt-40 pb-8 w-full text-center heading"></h2>
+                <div class="w-full flex flex-col content">
+                    <experience-card job-title="experience_insivalley_title"
+                        organization="experience_insivalley_organization" text="placeholder_text"
+                        date-range="experience_insivalley_date_range"
+                        skills="android development,ios development,django,devops,VPN,ads blocking"></experience-card>
+                    <experience-card job-title="experience_bidbazaar_title"
+                        organization="experience_bidbazaar_organization" text="placeholder_text"
+                        date-range="experience_bidbazaar_date_range"
+                        skills="React,Next.js,Node.js,Golang,Sveltekit"></experience-card>
+                </div>
+            </div>
+
+            <div class="w-[3.75%]"></div>
+
+            <div class="flex flex-col w-[22.5%]">
+                <div class="h-[300px]"></div>
+                <div
+                    class="sticky w-full h-[80vh] px-4 py-6 rounded-md bg-orange-100 shadow-2xl shadow-black/20 top-1/2 -translate-y-1/2">
+                    <h2 data-i18n="social_feed_heading" class="heading text-2xl"></h2>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-orange-100 py-20 w-full grid place-items-center">
+        <p data-i18n="footer_text" class="text"></p>
+    </footer>
+
+    <!---------------------------->
+    <!--------- Scripts ---------->
+    <!---------------------------->
+
+    <script src="i18n/en.js"></script>
+    <script src="i18n/ur.js"></script>
+
+    <script src="assets/js/project_card.js"></script>
+    <script src="assets/js/education_card.js"></script>
+    <script src="assets/js/experience_card.js"></script>
+
+    <script src="assets/data/projects.js"></script>
+
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/scroll.js"></script>
+</body>
+
+</html>
