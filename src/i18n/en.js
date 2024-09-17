@@ -53,7 +53,7 @@ const en_i18n_data = {
     "social_feed_heading": "Social Feed",
 
     "social_feed_item_1_heading": "The Art of Figlet Typography",
-    "social_feed_item_2_heading": "Time Stamp COunter",
+    "social_feed_item_2_heading": "Time Stamp Counter",
     "social_feed_item_3_heading": "The Grep Command",
     "social_feed_item_4_heading": "Fzf CLI Tool",
     "social_feed_item_5_heading": "Github Session",
