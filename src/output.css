@@ -562,10 +562,6 @@ video {
   position: absolute;
 }
 
-.relative {
-  position: relative;
-}
-
 .sticky {
   position: sticky;
 }
@@ -617,6 +613,22 @@ video {
   margin-top: 2rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .flex {
   display: flex;
 }
@@ -637,6 +649,10 @@ video {
   height: 7rem;
 }
 
+.h-5 {
+  height: 1.25rem;
+}
+
 .h-6 {
   height: 1.5rem;
 }
@@ -651,6 +667,38 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-7 {
+  height: 1.75rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-\[3000px\] {
+  height: 3000px;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.h-\[95vh\] {
+  height: 95vh;
+}
+
+.h-\[90vh\] {
+  height: 90vh;
+}
+
+.h-\[92vh\] {
+  height: 92vh;
+}
+
+.h-\[87vh\] {
+  height: 87vh;
 }
 
 .min-h-full {
@@ -669,8 +717,8 @@ video {
   width: 12rem;
 }
 
-.w-96 {
-  width: 24rem;
+.w-5 {
+  width: 1.25rem;
 }
 
 .w-\[10\%\] {
@@ -706,6 +754,18 @@ video {
   width: 100vw;
 }
 
+.w-7 {
+  width: 1.75rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.w-\[25\%\] {
+  width: 25%;
+}
+
 .min-w-\[30\%\] {
   min-width: 30%;
 }
@@ -714,28 +774,13 @@ video {
   min-width: 35%;
 }
 
-.-translate-x-9 {
-  --tw-translate-x: -2.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .-translate-y-1\/2 {
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.rotate-\[330deg\] {
-  --tw-rotate: 330deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .scale-y-\[150\%\] {
   --tw-scale-y: 150%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.scale-y-\[1500\%\] {
-  --tw-scale-y: 1500%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -783,14 +828,6 @@ video {
   gap: 1.5rem;
 }
 
-.gap-8 {
-  gap: 2rem;
-}
-
-.overflow-clip {
-  overflow: clip;
-}
-
 .whitespace-nowrap {
   white-space: nowrap;
 }
@@ -804,6 +841,11 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-green-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(187 247 208 / var(--tw-bg-opacity));
+}
+
 .bg-orange-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(255 237 213 / var(--tw-bg-opacity));
@@ -811,6 +853,11 @@ video {
 
 .bg-orange-200\/50 {
   background-color: rgb(254 215 170 / 0.5);
+}
+
+.bg-purple-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(233 213 255 / var(--tw-bg-opacity));
 }
 
 .bg-red-200 {
@@ -835,6 +882,10 @@ video {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .px-2\.5 {
@@ -873,10 +924,6 @@ video {
   padding-bottom: 2rem;
 }
 
-.pr-4 {
-  padding-right: 1rem;
-}
-
 .pt-1 {
   padding-top: 0.25rem;
 }
@@ -907,11 +954,6 @@ video {
   line-height: 2.25rem;
 }
 
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -925,6 +967,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-light {
@@ -959,17 +1006,6 @@ video {
 .text-zinc-900 {
   --tw-text-opacity: 1;
   color: rgb(24 24 27 / var(--tw-text-opacity));
-}
-
-.shadow-2xl {
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-black\/20 {
-  --tw-shadow-color: rgb(0 0 0 / 0.2);
-  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .transition-all {
@@ -1046,10 +1082,6 @@ html {
 
   .md\:px-8 {
     padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .md\:pr-8 {
     padding-right: 2rem;
   }
 

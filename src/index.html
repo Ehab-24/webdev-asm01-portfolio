@@ -123,11 +123,37 @@
 
             <div class="w-[3.75%]"></div>
 
-            <div class="flex flex-col w-[22.5%]">
+            <div class="flex flex-col w-[25%]">
                 <div class="h-[300px]"></div>
-                <div
-                    class="sticky w-full h-[80vh] px-4 py-6 rounded-md bg-orange-100 shadow-2xl shadow-black/20 top-1/2 -translate-y-1/2">
-                    <h2 data-i18n="social_feed_heading" class="heading text-2xl"></h2>
+                <div class="sticky w-full h-[80vh] bg-orange-100 top-1/2 -translate-y-1/2 flex flex-row">
+                    <div class="w-[1px] h-[87vh] mt-12 bg-slate-700"></div>
+                    <div class="px-4 py-6 w-full flex flex-col">
+                        <h2 data-i18n="social_feed_heading" class="heading text-2xl w-full text-center"></h2>
+
+                        <ul class="flex flex-col mt-8 gap-6 w-full content">
+
+                            <social-feed-item heading="social_feed_item_1_heading" text="social_feed_item_1_text"
+                                icon="../static/icons/linkedin.svg"
+                                link="https://www.linkedin.com/posts/ehab-sohail-7a768223b_figlet-terminal-typography-activity-7153959260303896576-Y-0G?utm_source=share&utm_medium=member_desktop"></social-feed-item>
+
+                            <social-feed-item heading="social_feed_item_2_heading" text="social_feed_item_2_text"
+                                icon="../static/icons/linkedin.svg"
+                                link="https://www.linkedin.com/posts/ehab-sohail-7a768223b_the-tsc-time-stamp-counter-is-a-64-bit-activity-7152967187450769408-0XY2?utm_source=share&utm_medium=member_desktop"></social-feed-item>
+
+                            <social-feed-item heading="social_feed_item_3_heading" text="social_feed_item_3_text"
+                                icon="../static/icons/linkedin.svg"
+                                link="https://www.linkedin.com/posts/ehab-sohail-7a768223b_commandline-developertips-developerproductivity-activity-7151558439477936128-cAFV?utm_source=share&utm_medium=member_desktop"></social-feed-item>
+
+                            <social-feed-item heading="social_feed_item_4_heading" text="social_feed_item_4_text"
+                                icon="../static/icons/linkedin.svg"
+                                link="https://www.linkedin.com/posts/ehab-sohail-7a768223b_developerproductivity-commandline-activity-7151060160507953153-Bp7V?utm_source=share&utm_medium=member_desktop"></social-feed-item>
+
+                            <social-feed-item heading="social_feed_item_5_heading" text="social_feed_item_5_text"
+                                icon="../static/icons/linkedin.svg"
+                                link="https://www.linkedin.com/posts/dsc-itu_taking-a-moment-to-appreciate-the-resounding-ugcPost-7122263936837595136-7DZx?utm_source=share&utm_medium=member_desktop"></social-feed-item>
+
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -148,6 +174,7 @@
     <script src="assets/js/project_card.js"></script>
     <script src="assets/js/education_card.js"></script>
     <script src="assets/js/experience_card.js"></script>
+    <script src="assets/js/social_feed_item.js"></script>
 
     <script src="assets/data/projects.js"></script>
 

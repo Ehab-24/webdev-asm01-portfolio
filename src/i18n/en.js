@@ -52,5 +52,17 @@ const en_i18n_data = {
 
     "social_feed_heading": "Social Feed",
 
+    "social_feed_item_1_heading": "The Art of Figlet Typography",
+    "social_feed_item_2_heading": "Time Stamp COunter",
+    "social_feed_item_3_heading": "The Grep Command",
+    "social_feed_item_4_heading": "Fzf CLI Tool",
+    "social_feed_item_5_heading": "Github Session",
+
+    "social_feed_item_1_text": "While writing a post four days ago, I had the thought of creating the post thumbnails right inside my beloved terminal. In pursuit of realizing this dream ...",
+    "social_feed_item_2_text": "The TSC (Time Stamp Counter) is a 64-bit register present on all x86 processors since the pentium [1] ...",
+    "social_feed_item_3_text": "grep is a command-line utility used to search for lines in a text/binary data sets that match a (regexp) pattern ...",
+    "social_feed_item_4_text": "fzf is a general purpose command-line fuzzy finder. It is mainly used with other commands like find or grep to fuzzily select an option. ~ For neovim users: nvim-telescope uses fzf to open files and ...",
+    "social_feed_item_5_text": "🎉 Taking a moment to appreciate the resounding success of our recent GitHub Session with Ehab Sohail at Saeed-ul Hassan Auditorium, where 150+ attendees delved into the world of coding ...",
+
     "placeholder_text": "This sentence is merely a placeholder, and although it has no meaning, it still provides value. These are the things that, when used at the right place, can create an impact wothout leaving a mark."
 }
